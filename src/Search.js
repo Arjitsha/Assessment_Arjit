@@ -1,8 +1,25 @@
 
 import React from "react";
+import data from "./Col";
+import Cards from "./Card";
+
 import { useState } from "react";
 export default function Search(){
     const [search,setSearch]=useState("");
+
+    function onSearch(e)
+    {
+        setSearch(e.target.value)
+        const newData=data.filter(data=>data.name.includes(e.target.value));
+        return(<div>
+            {newData}
+        </div>)
+          
+        }
+        
+
+
+    
  return (
     <div className="wrapper">
         <div className="search-wrapper">
@@ -18,7 +35,7 @@ export default function Search(){
                     // set the value of our useState q
                     //  anytime the user types in the search box
                     */
-                    onChange={(e) => setSearch(e.target.value)}
+                    onChange={onSearch}
                     ></input>
                     </label>
                     </div>
