@@ -1,0 +1,26 @@
+
+ [
+
+  {
+    "id":1,
+   "name": "NIT",
+   "fees": 50000,
+   "rating":"8.5/10"
+},
+    {
+   "id":2,
+   "name": "IIT",
+   "fees": 60000,
+   "rating": "9.5/10"
+
+    },
+    {
+    "id":3,
+    "name": "Graphic Era University",
+    "fees": 40000,
+    "rating": "8.5/10"
+
+   }
+]
+
+
